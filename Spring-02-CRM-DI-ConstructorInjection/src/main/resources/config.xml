@@ -4,7 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <bean id="publicMessaging" class="com.agilePro.services.PublicMessaging">
+        <constructor-arg ref="groupMessaging"/>
+    </bean>
+    <bean id="groupMessaging" class="com.agilePro.services.GroupMessaging"></bean>
     <bean id="privateMessaging" class="com.agilePro.services.PrivateMessaging"></bean>
-    <bean id="publicMessaging" class="com.agilePro.services.PublicMessaging"></bean>
 
 </beans>

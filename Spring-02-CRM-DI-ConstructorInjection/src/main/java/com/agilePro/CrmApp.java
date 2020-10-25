@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class CrmApp {
     public static void main(String[] args) {
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
-        Admin admin = container.getBean("privateMessaging", Admin.class);
+        Admin admin = container.getBean("publicMessaging", Admin.class);
         admin.manageMessages();
     }
 }

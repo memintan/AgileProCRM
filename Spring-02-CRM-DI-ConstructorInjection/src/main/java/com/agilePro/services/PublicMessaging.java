@@ -1,12 +1,17 @@
 package com.agilePro.services;
 
 import com.agilePro.interfaces.Admin;
+import com.agilePro.interfaces.Manager;
 
 public class PublicMessaging implements Admin {
 
-    GroupMessaging groupMessaging;
+    Manager manager;
+
+    public PublicMessaging(Manager manager) {
+        this.manager = manager;
+    }
 
     public void manageMessages() {
-        System.out.println(20 + groupMessaging.getMessages()+ "Public messages have been sent...");
+        System.out.println(20 + manager.getMessages()+ " Public messages have been sent...");
     }
 }
