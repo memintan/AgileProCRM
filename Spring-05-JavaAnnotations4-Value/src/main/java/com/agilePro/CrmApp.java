@@ -14,7 +14,7 @@ public class  CrmApp {
 
         Admin admin = container.getBean("publicMessaging", Admin.class);
 
-        //admin.manageMessages();
+        admin.manageMessages();
 
         System.out.println("admin.toString() = " + admin.toString());
 
