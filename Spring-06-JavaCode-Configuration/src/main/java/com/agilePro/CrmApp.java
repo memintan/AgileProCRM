@@ -14,6 +14,8 @@ public class CrmApp {
 
         admin.getTeachingHours();
 
+        System.out.println("admin.toString() = " + admin.toString());
+
 
     }
 }
